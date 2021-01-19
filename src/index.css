@@ -11,32 +11,49 @@ header {
   margin: 0 auto;
 }
 
-.buttons_stack {
-  float: left;
-  justify-self: end;
-  margin: 0;
-  padding-top: 10px;
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  border-bottom: 0.1px solid #bfbfbf;
 }
 
-.buttons_stack li {
-  display: inline;
+.logo {
+  width: 249px;
+  min-height: 25px;
+  background-image: url(img/logo.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  margin-bottom: 10px;
+}
+
+.buttons_stack {
+  float: right;
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.buttons_stack a {
+  align-self: center;
+  display: flex;
   margin-right: 27px;
   font-size: 16px;
   white-space: nowrap;
   padding-right: 40px;
+  color: #000;
+}
+
+@media screen and (max-width: 900px){
+  .buttons_stack {
+    display: none;
+  }
 }
 
 .buttons_stack li a {
   color: #000000;
-}
-
-.divider {
-  margin-bottom: 0;
-
-  width: 1274px;
-  height: 0;
-
-  border: 0.1px solid #bfbfbf;
 }
 
 .login_button {
@@ -47,18 +64,6 @@ header {
   background: #1890FF;
   transition: 0.2s;
   justify-self: right;
-}
-
-.header_content {
-  display: grid;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  grid-template-columns: 2fr 12fr 1fr;
-  grid-template-areas: "logo buttons_stack login_button";
-}
-
-.logo {
-  grid-area: logo;
 }
 
 .slogan {
