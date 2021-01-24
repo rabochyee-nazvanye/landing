@@ -92,7 +92,7 @@ header {
 }
 
 .about {
-  margin: 0 auto;
+  margin: 60px auto;
   max-width: 1274px;
   height: auto;
   display: flex;
@@ -104,7 +104,7 @@ h1 {
   color: #2C2C2E;
 }
 
-p {
+.description {
   font-size: 24px;
   color: #48484A;
 }
@@ -210,29 +210,32 @@ p {
   align-self: start;
 }
 
-.designers img {
-  grid-area: designers;
-  width: 800px;
-  margin-left: -340px;
+.center_items {
+  align-items: center;
 }
 
-.fourth_section {
-  grid-column-gap: 15px;
-  margin-left: 260px;
-  max-width: 1274px;
-  height: 400px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "women slogan" ". opportunities_description" ". create";
-  grid-template-rows: 3fr 3fr 1fr;
+.designers {
+  min-width: 50vw;
+  height: 60vh;
+  background-image: url(img/Designers.svg);
+  background-position: right center;
 }
 
-.women img {
-  grid-area: women;
-  width: 650px;
-  margin-left: -140px;
-  margin-top: 30px;
+.woman {
+  min-width: 50vw;
+  height: 60vh;
+  background-image: url(img/woman.svg);
+  background-position: left center;
 }
+
+.zero_top {
+  margin-top: 0;
+}
+
+.zero_bottom {
+  margin-bottom: 0;
+}
+
 .opportunities_description {
   grid-area: opportunities_description;
   margin-top: -280px;
@@ -355,6 +358,15 @@ p {
 @media screen and (max-width: 970px){
   .about {
     flex-direction: column;
+    align-items: normal;
+  }
+
+  .designers {
+    display: none;
+  }
+
+  .woman {
+    display: none;
   }
 
   .location {
