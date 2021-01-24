@@ -6,6 +6,16 @@ a {
   text-decoration: none;
 }
 
+.white {
+  color: white;
+}
+
+.slogan {
+  display: inline-block;
+  max-width: 1274px;
+  margin: 0 auto;
+}
+
 header {
   max-width: 1274px;
   margin: 0 auto;
@@ -22,14 +32,16 @@ header {
   width: 249px;
   min-height: 25px;
   background-image: url(img/logo.svg);
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: contain;
   margin-bottom: 10px;
+  background-position: left center;
+}
+
+.svg {
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .buttons_stack {
-  float: right;
   display: flex;
   flex-wrap: nowrap;
   align-self: center;
@@ -56,7 +68,7 @@ header {
   color: #000000;
 }
 
-.login_button {
+.button {
   font-size: 16px;
   color: white;
   padding: 8px 15px;
@@ -64,33 +76,37 @@ header {
   background: #1890FF;
   transition: 0.2s;
   justify-self: right;
+  border-width: 0;
+  transition-duration: .5s;
+  transition-property: background-color;
 }
 
-.slogan {
-  font-size: 50px;
-  margin-top: 70px;
-  grid-area: slogan;
-  white-space: nowrap;
+.button:hover {
+  background-color: #5856D6;
 }
 
 .location {
-  grid-area: location;
-  margin-top: 120px;
-  margin-right: 60px;
+  min-width: 40vw;
+  background-image: url(img/location.svg);
+  background-position: right center;
 }
 
-.description {
-  margin-top: -300px;
-}
-
-.first_section {
+.about {
   margin: 0 auto;
   max-width: 1274px;
-  height: 500px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: "slogan location" "description ." "try_it details";
-  grid-template-rows: 3fr 3fr 1fr;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 50px;
+  color: #2C2C2E;
+}
+
+p {
+  font-size: 24px;
+  color: #48484A;
 }
 
 .try_it{
@@ -121,56 +137,47 @@ header {
   align-self: start;
 }
 .second_section {
-  background-image: url(img/Rectangle_1.svg);
-  height: 550px;
-  margin: -10px;
-  display: grid;
-  grid-template-rows: 1fr 4fr;
-  grid-template-areas: "white_slogan" "service_cards";
-}
-.white_slogan {
-  font-size: 50px;
+  background-color: green;
   margin: 0 auto;
   max-width: 1274px;
-  color: white;
-  grid-area: white_slogan;
-  margin-top: 80px;
-  margin-left: 200px;
-  white-space: nowrap;
+  height: auto;
 }
+
 .service_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
   grid-area: service_cards;
   justify-self: center;
-  grid-template-columns: repeat(3, auto);
-  margin: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  margin-top: 50px;
 }
 .service_card {
   background: #FFFFFF;
   box-shadow: 0px 4px 30px rgba(32, 154, 51, 0.5);
   border-radius: 10px;
-  height: 320px;
-  width: 280px;
-  margin: auto 110px;
+  flex-grow: 1;
+  flex-shrink: 3;
+  padding: 30px 20px 0 35px;
+  margin-right: 32px;
 }
-.card_picture img {
+
+.last_card {
+  margin-right: 0;
+}
+
+.card_picture {
   width: 37%;
-  margin-top: 25px;
-  margin-left:25px;
 }
 
 .service_card h3 {
-  margin-left: 15px;
   font-size: 1.1em;
 }
 
-.service_card p {
-  margin-left: 15px;
+.card-description {
   font-size: 0.85em;
-  height: 45px;
+  height: 50px;
+  margin-bottom: 0;
 }
 
 .service_card a {
@@ -343,4 +350,50 @@ header {
 .git {
   flex-basis: 100%;
   height: 18%;
+}
+
+@media screen and (max-width: 970px){
+  .about {
+    flex-direction: column;
+  }
+
+  .location {
+    height: 50vw;
+    float: right;
+    margin: -40px 20px 0 0;
+  }
+
+  .service_cards {
+    flex-direction: column;
+  }
+
+  .service_card {
+    margin: 0 0 32px 0;
+    padding: 20px 15px 20px 25px;
+  }
+
+  .card_picture {
+    width: 20%
+  }
+
+  .card-description {
+    height: auto;
+  }
+
+  .second_section {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .location {
+    margin-top: 1px;
+    float: none;
+    height: 60vw;
+    width: 70vw;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
 }
