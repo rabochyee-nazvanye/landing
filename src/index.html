@@ -13,66 +13,75 @@
     <div class="header_content">
       <section class="svg logo"></section>
       <section class="buttons_stack">
-        <a href="#">Сервисы</a>
-        <a href="#">О платформе</a>
-        <a href="#">Отзывы</a>
-        <button class="button">Войти</button>
+        <a class="no_decoration" href="#">Сервисы</a>
+        <a class="no_decoration" href="#">О платформе</a>
+        <a class="no_decoration" href="#">Отзывы</a>
+        <button class="button button_blue button_small">Войти</button>
       </section>
     </div>
   </header>
 
-  <section class="about zero_top zero_bottom">
+  <section class="about zero_top zero_bottom col-reverse_degradation">
     <div class="text">
       <h1>Удобный и простой сервис<br>для квестов и викторин</h1>
       <p class="description">Веб-приложение с открытым исходным кодом<br>
         для проведения различных мероприятий:
         <br>квестов, квизов или викторин</p>
-      <button class="button">Попробовать</button>
-      <button class="button">Подробнее</button>
+      <button class="button button_green">Попробовать</button>
+      <button class="button button_green_outlined margin_left_16">Подробнее</button>
     </div>
     <section class="svg location"></section>
   </section>
 
-  <section class="second_section">
-    <h1 class="slogan white">Услуги и сервисы</h1>
-    <nav class="service_cards">
-    <div class="service_card">
-      <div class="card_picture">
-        <img src="img/rocket.svg" alt="rocket">
-      </div>
-      <h3>Квестспейс как сервис</h3>
-      <p class="card-description">Просто пользуйтесь платформой,<br>
-        квесты до 50 участников — бесплатно<br>
-        Больше 50 — посмотрите прайсинг</p>
-      <br>
-      <p class="card-description"><a href="#">Посмотреть прайс-лист</a></p>
-    </div>
-    <div class="service_card">
-      <div class="card_picture">
-        <img src="img/graph.svg" alt="graph">
-      </div>
-      <h3>Квестспейс как огородик</h3>
-      <p class="card-description">Сделаем брендинг под вашу<br>
-        компанию, развернем квестспейс на<br>
-        ваших ресурсах, будем поддерживать<br>
-        платформу</p>
-      <br>
-      <p class="card-description"><a href="#">Завести свой Квестспейс</a></p>
-    </div>
-    <div class="service_card last_card">
-      <div class="card_picture">
-        <img src="img/briefcase.svg" alt="briefcase">
-      </div>
-      <h3>Проведение квеста под ключ</h3>
-      <p class="card-description">Проведем для вашей компании квест<br>
-        под ключ. Придумаем и сделаем<br>
-        крутые задания, докрутим платформу<br>
-        под вас и будем рядов во время квеста</p>
-      <br>
-      <p class="card-description"><a href="#">Заказать квест</a></p>
-    </div>
+  <div class="services_background">
+    <section class="section_with_cards">
+      <h1 class="slogan white">Услуги и сервисы</h1>
+      <nav class="cards">
+        <div class="service_card">
+          <div class="card_picture">
+            <img src="img/rocket.svg" alt="rocket">
+          </div>
+          <article>
+            <h3>Квестспейс как сервис</h3>
+            <p class="card-description">Просто пользуйтесь платформой, <wbr>
+              квесты до 50 участников — бесплатно <wbr>
+              Больше 50 — посмотрите прайсинг</p>
+            <br>
+            <p class="card-description"><a class="no_decoration" href="#">Посмотреть прайс-лист</a></p>
+          </article>
+        </div>
+
+        <div class="service_card">
+          <div class="card_picture">
+            <img src="img/graph.svg" alt="graph">
+          </div>
+          <article>
+            <h3>Квестспейс как огородик</h3>
+            <p class="card-description">Сделаем брендинг под вашу <wbr>
+              компанию, развернем квестспейс на <wbr>
+              ваших ресурсах, будем поддерживать <wbr>
+              платформу</p>
+            <br>
+            <p class="card-description"><a class="no_decoration" href="#">Завести свой Квестспейс</a></p>
+          </article>
+        </div>
+        <div class="service_card last_card">
+          <div class="card_picture">
+            <img src="img/briefcase.svg" alt="briefcase">
+          </div>
+          <article>
+            <h3>Проведение квеста под ключ</h3>
+            <p class="card-description">Проведем для вашей компании квест<wbr>
+              под ключ. Придумаем и сделаем <wbr>
+              крутые задания, докрутим платформу <wbr>
+              под вас и будем рядов во время квеста</p>
+            <br>
+            <p class="card-description"><a class="no_decoration" href="#">Заказать квест</a></p>
+          </article>
+        </div>
       </nav>
-  </section>
+    </section>
+  </div>
 
   <section class="about center_items">
     <div class="text">
@@ -83,13 +92,13 @@
         Никаких сложных форм. Вы просто создаете<br>
         квест, люди просто его проходят
       </p>
-      <button class="button">Просто затестить</button>
+      <button class="button button_blue">Просто затестить</button>
     </div>
     <div class="svg designers">
     </div>
   </section>
 
-  <div class="about">
+  <section class="about">
     <div class="svg woman"></div>
     <div class="text">
       <h1 class="slogan">Всё включено</h1>
@@ -105,52 +114,56 @@
           <li>Админка и лидерборд</li>
           <li>Механизм подсказок</li>
         </ul>
-      <button class="button">Создать квест</button>
+      <button class="button button_blue">Создать квест</button>
     </div>
-  </div>
+  </section>
 
-<!--  <div class="reviews_section">-->
-<!--    <div class="slogan">Отзывы</div>-->
-<!--    <div class="reviews_cards">-->
-<!--      <div class="review_card">-->
-<!--        <img src="img/shit.svg" alt="shit" class="emoji">-->
-<!--        <img src="https://pbs.twimg.com/profile_images/1319030627736440841/fDLLoVBD_400x400.jpg" alt="hehe" class="round">-->
-<!--        <h4>Квест чот срань)</h4>-->
-<!--        <p>Андрей Пушин, СКБ Контур</p>-->
-<!--      </div>-->
-<!--      <div class="review_card">-->
-<!--        <img src="img/wow.svg" alt="wow" class="emoji">-->
-<!--        <img src="https://pbs.twimg.com/profile_images/1319030627736440841/fDLLoVBD_400x400.jpg" alt="hehe" class="round">-->
-<!--        <h4>ЭТО КАРТОГРАФИЧЕСКИЙ ОРГАЗМ</h4>-->
-<!--        <p>Карина Тиничева, Яндекс</p>-->
-<!--      </div>-->
-<!--      <div class="review_card">-->
-<!--        <img src="img/super.svg" alt="super" class="emoji">-->
-<!--        <img src="https://pbs.twimg.com/profile_images/1319030627736440841/fDLLoVBD_400x400.jpg" alt="hehe" class="round">-->
-<!--        <h4>Норм</h4>-->
-<!--        <p>Катя Журко, Банк Точка</p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
+  <section class="section_with_cards">
+    <h1 class="slogan">Отзывы</h1>
+    <div class="cards">
+      <div class="review_card">
+        <img src="img/shit.svg" alt="shit" class="emoji">
+        <img src="https://pbs.twimg.com/profile_images/1319030627736440841/fDLLoVBD_400x400.jpg" alt="hehe" class="round">
+        <h4>Квест чот срань)</h4>
+        <p>Андрей Пушин, СКБ Контур</p>
+      </div>
+      <div class="review_card">
+        <img src="img/wow.svg" alt="wow" class="emoji">
+        <img src="https://pbs.twimg.com/profile_images/1319030627736440841/fDLLoVBD_400x400.jpg" alt="hehe" class="round">
+        <h4>ЭТО КАРТОГРАФИЧЕСКИЙ ОРГАЗМ</h4>
+        <p>Карина Тиничева, Яндекс</p>
+      </div>
+      <div class="review_card last_card">
+        <img src="img/super.svg" alt="super" class="emoji">
+        <img src="https://pbs.twimg.com/profile_images/1319030627736440841/fDLLoVBD_400x400.jpg" alt="hehe" class="round">
+        <h4>Норм</h4>
+        <p>Катя Журко, Банк Точка</p>
+      </div>
+    </div>
+  </section>
 
-<!--  <div class="questions_section">-->
-<!--    <div class="white_slogan">-->
-<!--      Остались вопросы?<br>-->
-<!--      Напишите нам-->
-<!--    </div>-->
-<!--    <div class="write">Написать</div>-->
-<!--    <img src="img/question.svg" alt="question" class="question_picture">-->
-<!--  </div>-->
+  <section class="questions_section">
+    <div class="about">
+      <div class="text">
+        <h1 class="white">
+          Остались вопросы?<br>
+          Напишите нам
+        </h1>
+        <button class="button button_white">Написать</button>
+      </div>
 
-<!--  <footer>-->
-<!--    <div class="footer_content">-->
-<!--      <span class="footer_info">inbox@questspace.live</span>-->
-<!--      <img src="img/space.svg" alt="logo" class="footer_logo">-->
-<!--      <span class="footer_info">&copy;2020</span>-->
-<!--      <p></p>-->
-<!--      <img src="img/git.svg" alt="git" class="git">-->
-<!--    </div>-->
-<!--  </footer>-->
+      <div class="question"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer_content">
+      <span class="footer_text">inbox@questspace.live</span>
+      <div class="logo_footer"></div>
+      <span class="footer_text text_right">&copy;2020</span>
+    </div>
+    <div class="git"></div>
+  </footer>
   </body>
 </html>
 
