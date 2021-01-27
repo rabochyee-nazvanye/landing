@@ -84,6 +84,19 @@ header {
   transition-property: background-color;
 }
 
+.input {
+  color: #333333;
+  font-family: 'Golos', sans-serif;
+  padding: 14px 28px;
+  border-radius: 5px;
+  transition: 0.2s;
+  justify-self: right;
+  border-width: 0;
+  margin-right: 16px;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
 .button_blue {
   background-color: #1890FF;
 }
@@ -117,12 +130,15 @@ header {
 }
 
 .button_white {
+  font-size: 20px;
   background-color: white;
   color: #1890FF;
+  transition-property: color, background-color;
 }
 
 .button_white:hover {
-  background-color: #E8E8E8;
+  background-color: #1890FF;
+  color: white;
 }
 
 .button_small {
@@ -319,6 +335,11 @@ h1 {
   text-align: right;
 }
 
+.form_description {
+  color: white;
+  margin-top: -30px;
+}
+
 @media screen and (max-width: 1300px) {
   .about {
     padding: 0 64px;
@@ -340,11 +361,7 @@ h1 {
     padding: 0 32px;
   }
 
-  .designers {
-    display: none;
-  }
-
-  .woman {
+  .designers, .woman, .emoji {
     display: none;
   }
 
@@ -381,10 +398,6 @@ h1 {
   .review_card {
     margin: 0 0 32px 0;
     padding: 20px 15px 20px 25px;
-  }
-
-  .emoji {
-    display: none;
   }
 
   .card_picture {
@@ -454,15 +467,7 @@ h1 {
     margin: 32px -8px;
   }
 
-  .about {
+  .about, .section_with_cards {
     padding: 0 16px;
-  }
-
-  .section_with_cards {
-    padding: 0 16px;
-  }
-
-  .button {
-    font-size: 20px;
   }
 }
