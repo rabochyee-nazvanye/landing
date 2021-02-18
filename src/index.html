@@ -11,29 +11,29 @@
   <body>
   <header>
     <div class="header_content">
-      <section class="svg logo"></section>
+      <a class="no_decoration" href=""><div class="svg logo"></div></a>
       <section class="buttons_stack">
-        <a class="no_decoration" href="#">Сервисы</a>
-        <a class="no_decoration" href="#">О платформе</a>
-        <a class="no_decoration" href="#">Отзывы</a>
-        <button class="button button_blue button_small">Войти</button>
+        <a class="no_decoration" href="#services">Сервисы</a>
+        <a class="no_decoration" href="#about">О платформе</a>
+        <a class="no_decoration" href="#reviews">Отзывы</a>
+        <a class="no_decoration" href="https://questspace.live"><button class="button button_blue button_small cursor_pointer">Войти</button></a>
       </section>
     </div>
   </header>
 
   <section class="about zero_top zero_bottom col-reverse_degradation">
     <div class="text">
-      <h1>Удобный и простой сервис<br>для квестов и викторин</h1>
+      <h1>Удобный сервис<br>для квестов и викторин</h1>
       <p class="description">Веб-приложение с открытым исходным кодом<br>
         для проведения различных мероприятий:
         <br>квестов, квизов или викторин</p>
-      <button class="button button_green">Попробовать</button>
-      <button class="button button_green_outlined margin_left_16">Подробнее</button>
+      <button class="button button_green cursor_pointer">Попробовать</button>
+      <button class="button button_green_outlined margin_left_16 cursor_pointer">Подробнее</button>
     </div>
     <section class="svg location"></section>
   </section>
 
-  <div class="services_background">
+  <div id="services" class="services_background">
     <section class="section_with_cards">
       <h1 class="slogan white">Услуги и сервисы</h1>
       <nav class="cards">
@@ -83,7 +83,7 @@
     </section>
   </div>
 
-  <section class="about center_items">
+  <section id="about" class="about center_items">
     <div class="text">
       <h1 class="slogan">Просто работает</h1>
       <p class="description">Использовали самые современные технологии<br>
@@ -92,7 +92,7 @@
         Никаких сложных форм. Вы просто создаете<br>
         квест, люди просто его проходят
       </p>
-      <button class="button button_blue">Просто затестить</button>
+      <button class="button button_blue cursor_pointer">Просто затестить</button>
     </div>
     <div class="svg designers">
     </div>
@@ -114,11 +114,11 @@
           <li>Админка и лидерборд</li>
           <li>Механизм подсказок</li>
         </ul>
-      <button class="button button_blue">Создать квест</button>
+      <button class="button button_blue cursor_pointer">Создать квест</button>
     </div>
   </section>
 
-  <section class="section_with_cards">
+  <section id="reviews" class="section_with_cards">
     <h1 class="slogan">Отзывы</h1>
     <div class="cards">
       <div class="review_card">
@@ -149,7 +149,7 @@
         <p class="form_description">Оставьте свою почту и мы свяжемся с вами</p>
         <form action="https://formspree.io/f/moqprzep" method="POST">
           <input type="email" name="_replyto" class="input" placeholder="Ваша электропочта">
-          <input type="submit" value="Отправить" class="button button_white">
+          <input type="submit" value="Отправить" class="button button_white cursor_pointer">
         </form>
       </div>
 
@@ -159,9 +159,9 @@
 
   <footer class="footer">
     <div class="footer_content">
-      <span class="footer_text">inbox@questspace.live</span>
+      <span class="footer_text">contact@questspace.live</span>
       <div class="logo_footer"></div>
-      <span class="footer_text text_right">&copy;2020</span>
+      <span class="footer_text text_right">&copy;questspace.live 2019-2021</span>
     </div>
     <div class="git"></div>
   </footer>
