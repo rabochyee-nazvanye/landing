@@ -6,6 +6,10 @@ body {
   font-family: 'Golos', sans-serif;
 }
 
+.cursor_pointer {
+  cursor: pointer !important;
+}
+
 .no_decoration {
   text-decoration: none;
 }
@@ -68,10 +72,9 @@ header {
 .buttons_stack a {
   align-self: center;
   display: flex;
-  margin-right: 27px;
   font-size: 16px;
   white-space: nowrap;
-  padding-right: 40px;
+  margin-left: 30px;
   color: #000;
 }
 
@@ -349,6 +352,10 @@ h1 {
     padding: 0 64px;
   }
 
+  .header_content {
+    margin: 0 64px;
+  }
+
   .section_with_cards {
     padding: 0 64px;
   }
@@ -357,6 +364,10 @@ h1 {
 @media screen and (max-width: 970px){
   .section_with_cards {
     padding: 0 32px;
+  }
+
+  .header_content {
+    margin: 0 32px;
   }
 
   .about {
