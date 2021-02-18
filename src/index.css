@@ -201,6 +201,12 @@ h1 {
   flex-shrink: 3;
   padding: 30px 20px 0 35px;
   margin-right: 64px;
+  transition: all 150ms ease-out;
+}
+
+.service_card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 15px 30px rgb(20, 115, 36);
 }
 
 .card_picture {
