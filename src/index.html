@@ -13,10 +13,12 @@
     <div class="header_content">
       <section class="svg logo"></section>
       <section class="buttons_stack">
-        <a class="no_decoration" href="#">Сервисы</a>
-        <a class="no_decoration" href="#">О платформе</a>
-        <a class="no_decoration" href="#">Отзывы</a>
-        <button class="button button_blue button_small">Войти</button>
+        <a class="no_decoration" href="#services">Сервисы</a>
+        <a class="no_decoration" href="#about">О платформе</a>
+        <a class="no_decoration" href="#feedback">Отзывы</a>
+        <a class="no_decoration" href="https://questspace.app/account">
+          <button class="button button_blue button_small">Войти</button>
+        </a>
       </section>
     </div>
   </header>
@@ -27,13 +29,15 @@
       <p class="description">Веб-приложение с открытым исходным кодом<br>
         для проведения различных мероприятий:
         <br>квестов, квизов или викторин</p>
-      <button class="button button_green">Попробовать</button>
-      <button class="button button_green_outlined margin_left_16">Подробнее</button>
+      <a class="no_decoration" href="https://questspace.app/">
+        <button class="button button_green">Попробовать</button>
+      </a>
+<!--      <button class="button button_green_outlined margin_left_16">Подробнее</button>-->
     </div>
     <section class="svg location"></section>
   </section>
 
-  <div class="services_background">
+  <div class="services_background" id="services">
     <section class="section_with_cards">
       <h1 class="slogan white">Услуги и сервисы</h1>
       <nav class="cards">
@@ -47,7 +51,7 @@
               квесты до 50 участников — бесплатно <wbr>
               Больше 50 — посмотрите прайсинг</p>
             <br>
-            <p class="card-description"><a class="no_decoration" href="#">Посмотреть прайс-лист</a></p>
+            <p class="card-description"><a class="no_decoration" href="#form">Посмотреть прайс-лист</a></p>
           </article>
         </div>
 
@@ -62,7 +66,7 @@
               ваших ресурсах, будем поддерживать <wbr>
               платформу</p>
             <br>
-            <p class="card-description"><a class="no_decoration" href="#">Завести свой Квестспейс</a></p>
+            <p class="card-description"><a class="no_decoration" href="#form">Завести свой Квестспейс</a></p>
           </article>
         </div>
         <div class="service_card last_card">
@@ -76,14 +80,14 @@
               крутые задания, докрутим платформу <wbr>
               под вас и будем рядов во время квеста</p>
             <br>
-            <p class="card-description"><a class="no_decoration" href="#">Заказать квест</a></p>
+            <p class="card-description"><a class="no_decoration" href="#form">Заказать квест</a></p>
           </article>
         </div>
       </nav>
     </section>
   </div>
 
-  <section class="about center_items">
+  <section class="about center_items" id="about">
     <div class="text">
       <h1 class="slogan">Просто работает</h1>
       <p class="description">Использовали самые современные технологии<br>
@@ -92,7 +96,9 @@
         Никаких сложных форм. Вы просто создаете<br>
         квест, люди просто его проходят
       </p>
-      <button class="button button_blue">Просто затестить</button>
+      <a class="no_decoration" href="https://questspace.app/">
+        <button class="button button_blue">Просто затестить</button>
+      </a>
     </div>
     <div class="svg designers">
     </div>
@@ -114,35 +120,37 @@
           <li>Админка и лидерборд</li>
           <li>Механизм подсказок</li>
         </ul>
-      <button class="button button_blue">Создать квест</button>
+      <a class="no_decoration" href="https://questspace.app/">
+        <button class="button button_blue">Создать квест</button>
+      </a>
     </div>
   </section>
 
-  <section class="section_with_cards">
+  <section class="section_with_cards" id="feedback">
     <h1 class="slogan">Отзывы</h1>
     <div class="cards">
       <div class="review_card">
         <img src="img/shit.svg" alt="shit" class="emoji">
-        <img src="https://pbs.twimg.com/profile_images/1319030627736440841/fDLLoVBD_400x400.jpg" alt="hehe" class="round">
+        <img src="./img/pushin.jpg" alt="hehe" class="round">
         <h4>Квест чот срань)</h4>
-        <p>Андрей Пушин, СКБ Контур</p>
+        <p>Андрей Пушин, Контур</p>
       </div>
       <div class="review_card">
         <img src="img/wow.svg" alt="wow" class="emoji">
-        <img src="https://pbs.twimg.com/profile_images/1319030627736440841/fDLLoVBD_400x400.jpg" alt="hehe" class="round">
+        <img src="./img/karina.jpg" alt="hehe" class="round">
         <h4>ЭТО КАРТОГРАФИЧЕСКИЙ ОРГАЗМ</h4>
         <p>Карина Тиничева, Яндекс</p>
       </div>
       <div class="review_card last_card">
         <img src="img/super.svg" alt="super" class="emoji">
-        <img src="https://pbs.twimg.com/profile_images/1319030627736440841/fDLLoVBD_400x400.jpg" alt="hehe" class="round">
+        <img src="./img/zhura.jpg" alt="hehe" class="round">
         <h4>Норм</h4>
         <p>Катя Журко, Банк Точка</p>
       </div>
     </div>
   </section>
 
-  <section class="questions_section">
+  <section class="questions_section" id="form">
     <div class="about">
       <div class="text">
         <h1 class="white">Есть вопросы?</h1>
@@ -161,7 +169,7 @@
     <div class="footer_content">
       <span class="footer_text">inbox@questspace.live</span>
       <div class="logo_footer"></div>
-      <span class="footer_text text_right">&copy;2020</span>
+      <span class="footer_text text_right">&copy;2021</span>
     </div>
     <div class="git"></div>
   </footer>
